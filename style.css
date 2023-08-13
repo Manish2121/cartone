@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 11px;
+    user-select: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-zoom: 2;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    min-height: 325px;
+    width: 340.734px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+}
+
+.col20 {
+    padding: 5px;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col25 {
+    /* padding: 5px; */
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: end;
+}
+
+.col30 {
+    /* padding: 5px; */
+    width: 30%;
+}
+
+
+.col35 {
+    padding: 5px;
+    width: 35%;
+    text-align: end;
+}
+
+.col50 {
+    /* padding: 5px; */
+    width: 50%;
+}
+
+.col60 {
+    /* padding: 5px; */
+    width: 60%;
+}
+
+.col65 {
+    /* padding: 5px; */
+    width: 60%;
+}
+
+.col70 {
+    /* padding: 5px; */
+    width: 75%;
+}
+
+.col75 {
+    /* padding: 5px; */
+    width: 75%;
+    text-align: start;
+    /* border: solid 1px #ddd; */
+}
+
+.col100 {
+    /* padding: 5px; */
+    width: 100%;
+}
+
+.heading {
+    color: #007F61;
+    font-size: 13px;
+    padding: 0px;
+
+    font-weight: 600;
+}
+
+.details {
+    color: #000;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+
+
+
+
+/* code is from bottom to top */
+.wrapper .main .buttonSection button {
+    width: 100%;
+    padding: 7px;
+    border-radius: 4px;
+    border: 0;
+    margin: 0;
+    font-size: 14px;
+    outline: 0;
+    background-color: #007F61;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.wrapper .footer p {
+    text-align: end;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.wrapper .totalSection {
+    margin-bottom: 10px;
+}
+
+.wrapper .totalSection .row .col50:nth-child(2) {
+    font-weight: 300;
+    text-align: end;
+}
+
+.wrapper .main .ThirdSection {
+    margin-bottom: 10px;
+    border: solid 0.984px #C8C8C8;
+    border-radius: 4.4px;
+    padding: 10px;
+
+}
+
+.wrapper .main .SecondSection {
+    margin-bottom: 10px;
+    border-radius: 4.4px;
+    padding: 10px;
+    border: solid 0.984px #007F61;
+    background-color: #F4FBF9;
+}
+
+.wrapper .main .firstSection {
+    border-radius: 4.4px;
+    margin-bottom: 10px;
+    border: solid 0.984px #C8C8C8;
+    padding: 10px;
+}
+
+.wrapper .main .ThirdSection .row .col50:nth-child(2) {
+    text-align: end;
+}
+
+.wrapper .main .SecondSection .row .col50 {
+    text-align: end;
+}
+
+.wrapper .main .SecondSection .row .col30 p {
+    text-align: end;
+}
+
+.wrapper .main .firstSection .row .col50:nth-child(2) {
+    text-align: end;
+}
+
+.optionWrapper .row {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+table {
+    padding: 8px;
+
+}
+
+table thead th {
+    text-align: start;
+}
+
+table tbody td {
+    text-align: start;
+}
+
+input[type='radio'] {
+    accent-color: #007F61;
+}
+
+
+.col25 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+select {
+    padding: 2px 10px;
+    border-radius: 1.808px;
+    border: 0.904px solid #D9D9D9;
+    background: #FFF;
+    outline: none;
+    margin: 1px;
+}
+
+.offer {
+    padding: 0px 0px;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.productSorter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.productSorter p {
+    padding: 2px;
+}
+
+.dicard {
+    font-size: 9.942px;
+    font-weight: 400;
+    color: #9F9F9F;
+    display: flex;
+    margin-right: 5px;
+
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    height: 30px;
+    padding: 15px 0px;
+}
+
+.header h5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 0px 10px;
+}
+
+.title {
+    font-size: 18.076px;
+    color: #007F61;
+}
+
+option:nth-child(even) {
+    background-color: #F4FBF9;
+    color: #007F61;
+
+}
+
+
+
+

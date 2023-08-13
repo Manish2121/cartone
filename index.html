@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h5 class="title">Bundle & Save</h5>
+            <hr />
+        </div>
+        <div class="main">
+            <div class="firstSection">
+                <div class="row">
+                    <div class="col75">
+                        <div class="row">
+                            <div class="col20"><input type="radio" name="productOption" value="pair1"
+                                    onclick="calculateTotal(0.5)"></div>
+                            <div class="col80">
+                                <p class="details">1 Pair</p>
+                                <p class="details">DKK 195.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25 offer">
+                        <p class="details">50% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="SecondSection">
+                <div class="row">
+                    <div class="col70">
+                        <div class="row">
+                            <div class="col20"><input type="radio" name="productOption" value="pair2"
+                                    onclick="calculateTotal(0.4)"></div>
+                            <div class="col80">
+                                <p class="details">2 Pair</p>
+                                <div class="productSorter">
+                                    <p class="details">DKK 345.00</p>
+                                    <p class="dicard"><del>DKK 195.00</del></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col30">
+                        <p class="heading">Most Popular</p>
+                        <p class="details">40% off</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col100">
+                        <div class="row">
+                            <div class="col100 optionWrapper">
+                                <table>
+                                    <thead>
+                                        <th></th>
+                                        <th>Size</th>
+                                        <th>Color</th>
+                                    </thead>
+                                    <tbody id="tableBody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ThirdSection">
+                <div class="row">
+                    <div class="col75">
+                        <div class="row">
+                            <div class="col20"><input type="radio" name="productOption" value="pair3"
+                                    onclick="calculateTotal(0.6)" /></div>
+                            <div class="col80">
+                                <p class="details">3 Pair</p>
+                                <p class="details">DKK 528.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col25 offer">
+                        <p class="details">60% off</p>
+                    </div>
+                </div>
+            </div>
+            <div class="totalSection">
+                <div class="row">
+                    <div class="col50">
+                        <h5 class="heading">Free 2 Day Shipping</h5>
+                    </div>
+                    <div class="col50">
+                        <p class="details" id="totalPrice">Total</p>
+                    </div>
+                </div>
+            </div>
+            <div class="buttonSection">
+                <button id="addToCartButton">+ Add to Cart</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; Powered by Pumper</p>
+        </div>
+    </div>
+
+    <script>
+        function generateTableRows() {
+            const tableBody = document.getElementById("tableBody");
+            let rows = '';
+            for (let i = 1; i <= 2; i++) {
+                rows += `
+        <tr>
+            <td>#${i}</td>
+            <td>
+                <select class="size-select">
+                    ${generateOptions(sizeOptions)}
+                </select>
+            </td>
+            <td>
+                <select class="color-select">
+                    ${generateOptions(colorOptions)}
+                </select>
+            </td>
+        </tr>
+    `;
+            }
+
+            tableBody.innerHTML = rows;
+        }
+
+        generateTableRows();
+    </script>
+
+
+</body>
+
+</html>
